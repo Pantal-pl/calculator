@@ -1,7 +1,7 @@
 # Calculator
 **Features**
-- sin,cos,tan
-- + , - , * , /
+- sin, cos, tan
+- - , + , * , /
 - square root, power
 - log
 - All clear, delete
