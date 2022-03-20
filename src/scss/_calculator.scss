@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  cursor: pointer;
+  flex: 1;
+  transition: 0.12s ease-in-out;
+  color: #fff;
+  font-size: 3rem;
+  transition: 0.25s;
+  &:hover {
+    background: rgba(255, 255, 255, 0.199);
+  }
+  &:focus-visible {
+    background: linear-gradient(130.34deg, #fc7af7 -95.58%, #1d04ba 224.56%);
+  }
+}
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background: #454545;
+  & .square {
+    position: absolute;
+    transition: .25s ease-in-out;
+    &:hover {
+        filter: blur(10px);
+    }
+  }
+  & .square1 {
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(213.49deg, #883385 -23.86%, #2d5bff 164.59%);
+    left: -2%;
+    top: 80%;
+  }
+  & .square2 {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(213.49deg, #883385 -23.86%, #2d5bff 164.59%);
+    left: 10%;
+    top: 15%;
+  }
+  & .square3 {
+    width: 11rem;
+    height: 11rem;
+    background: linear-gradient(213.49deg, #883385 -23.86%, #2d5bff 164.59%);
+    left: 30%;
+    top: 30%;
+  }
+  & .square4 {
+    width: 11rem;
+    height: 11rem;
+    background: linear-gradient(213.49deg, #883385 -23.86%, #2d5bff 164.59%);
+    left: 50%;
+    top: 75%;
+  }
+  & .square5 {
+    width: 13rem;
+    height: 13rem;
+    background: linear-gradient(213.49deg, #883385 -23.86%, #2d5bff 164.59%);
+    left: 75%;
+    top: 20%;
+  }
+  & .square6 {
+    width: 16rem;
+    height: 16rem;
+    background: linear-gradient(213.49deg, #883385 -23.86%, #2d5bff 164.59%);
+    left: 80%;
+    top: 65%;
+  }
+  & .trigonometry {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    & button {
+      height: 16vh;
+      width: 10vw;
+    }
+  }
+
+  & .calculator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70vw;
+    height: 90vh;
+    background: linear-gradient(
+      151.66deg,
+      rgba(255, 255, 255, 0.27) 10.77%,
+      rgba(255, 255, 255, 0.054) 98.05%
+    );
+    box-shadow: 0px 4px 28px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    & #absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .5rem;
+      transform: translateX(75px);
+    }
+    & .calculator-first {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      & .actions {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+      }
+      & .result {
+        width: calc(80% - 1rem);
+        height: 100%;
+        padding-right: 1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        color: #fff;
+        flex-direction: column;
+        font-size: 5rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        & .result-previous {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    & .calculator-second {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      & .more-actions {
+        display: grid;
+        width: 20%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+      }
+      & .numbers {
+        display: grid;
+        width: 60%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+      & .bacis-actions {
+        display: grid;
+        width: 20%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+.button-active {
+  background: linear-gradient(
+    113.49deg,
+    #883385 -23.86%,
+    #2d5bff 164.59%
+  ) !important;
+  transition: 0.25s ease;
+  transform: scale(1.05);
+}
+
+.trigonometry-show {
+  display: flex !important;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <div class="square square1"></div>
+      <div class="square square2"></div>
+      <div class="square square3"></div>
+      <div class="square square4"></div>
+      <div class="square square5"></div>
+      <div class="square square6"></div>
+      <div class="square square7"></div>
+      <div class="square square8"></div>
+      <div class="trigonometry">
+        <button class="operation" id="sin">sin</button>
+        <button class="operation" id="cos">cos</button>
+        <button class="operation" id="tan">tan</button>
+      </div>
+      <div class="calculator">
+        <button class="operation" id="absolute">+/-</button>
+
+        <div class="calculator-first">
+          <div class="actions">
+            <button id="delete">Del</button>
+            <button id="all-clear">AC</button>
+          </div>
+          <div class="result">
+            <div class="result-previous"></div>
+            <div class="result-current"></div>
+          </div>
+        </div>
+        <div class="calculator-second">
+          <div class="more-actions">
+            <button class="show-trigonometry">. . .</button>
+            <button class="operation" id="power">x²</button>
+            <button class="operation" id="sqrt">√</button>
+            <button class="operation" id="log">log</button>
+          </div>
+          <div class="numbers">
+            <button class="number" id="one">1</button>
+            <button class="number" id="two">2</button>
+            <button class="number" id="three">3</button>
+            <button class="number" id="four">4</button>
+            <button class="number" id="five">5</button>
+            <button class="number" id="six">6</button>
+            <button class="number" id="seven">7</button>
+            <button class="number" id="eight">8</button>
+            <button class="number" id="nine">9</button>
+            <button class="number" id="comma">.</button>
+            <button class="number" id="zero">0</button>
+            <button id="equal">=</button>
+          </div>
+          <div class="bacis-actions">
+            <button class="operation" id="multiply">x</button>
+            <button class="operation" id="divide">/</button>
+            <button class="operation" id="addition">+</button>
+            <button class="operation" id="subtraction">-</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="src\js\main.js" defer></script>
+  </body>
+</html>
